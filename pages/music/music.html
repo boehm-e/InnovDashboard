@@ -1,0 +1,36 @@
+
+<div id="songContainer" class="row">
+  <!-- HERE WILL BE DISPLAYED THE SONGS -->
+</div>
+
+<script>
+  $("#menuPath").html('<a href="#!" class="breadcrumb">Accueil</a><a href="#!" class="breadcrumb">Musique</a>');
+  console.log("TAMERE");
+  
+  function loadSongs() {
+    $.get("http://localhost:3000/songsForWeb", function(data) {
+      var data = JSON.parse(data);
+      var html = "";
+      for(author in data) {
+          html += '<ul id="songContainer" class="collection with-header col s12">';
+          html += '<li class="collection-header"><h4>'+author+'</h4></li>';
+          for (i=0; i< data[author].length; i++) {
+              html += '<li class="collection-item"><div><span>'+data[author][i]+'</span><i class="secondary-content material-icons playSong">play_arrow</i></div></li>';
+          }
+          html += '</ul>';
+      }
+      $("#songContainer").empty();
+      $("#songContainer").append(html);
+
+      $(".playSong").click(function(){
+          var songName = this.parentNode.getElementsByTagName('span')[0].innerText;
+          var artist = this.parentNode.parentNode.parentNode;
+          var result = artist.getElementsByClassName("collection-header")[0].getElementsByTagName('h4')[0];
+          var abc = result.innerText;
+          Socket.send("ecouter " + songName.replace('play arrow', '').replace('.mp3','').split('_').join(' ') + " " + abc);
+      })
+    })
+  }
+
+  loadSongs();
+</script>

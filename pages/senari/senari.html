@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="pages/senari/css/senari.css">
+<div class="row fullHeight">
+
+<div id="settings" class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">settings</i>
+    </a>
+    <ul>
+      <li><a id="reload" class="btn-floating blue"><i class="material-icons">replay</i></a></li>
+      <li><a id="done" class="btn-floating green"><i class="material-icons">done</i></a></li>
+    </ul>
+  </div>
+
+
+
+  <div id="system" class="col s3 fullHeight">
+
+<!-- LIST OF ELEMENTS AVALIABLE -->
+    <ul id="systemList" class="connectedSortable collection with-header">
+      <li class="collection-header disable"><h4>List Systeme</h4></li>
+
+  <!-- WHEN -->
+ 
+      <li class="collection-header disable"><h5>Quand ...</h5></li>
+
+      <li class="whenItem collection-item row" data-type="keyword"><span class="col s6">Mot cle</span><div class="more col s6"><input type="text" placeholder="ex: bonjour"></div></li>
+      <li class="whenItem collection-item row" data-type="mail"><span class="col s6">Nouveau mail</span><div class="more col s6"><input type="text" placeholder="ex: boehm_e@etn-alternance.net"></div></li>
+      <li class="whenItem collection-item row" data-type="nfc"><span class="col s6">Tag NFC</span><div class="more col s6"><input type="text" placeholder="ie: contenu du tag"></div></li>
+<!--      <li class="whenItem collection-item row" data-type="swipe"><span class="col s6">Swipe</span></li>-->
+      <li class="whenItem collection-item row" data-type="tvshow"><span class="col s6">Nouvelle serie</span></li>
+
+
+  <!-- AND -->
+
+      <li class="collection-header disable"><h5>Et ...</h5></li>
+      <li class="whenItem andItem collection-item row" data-type="date"><span class="col s6">Date</span><div class="more col s6"><input type="date" class="datepicker"></div></li>
+
+
+  <!-- THEN -->
+
+      <li class="collection-header disable"><h5>Alors ...</h5></li>
+
+      <li class="thenItem collection-item row" data-type="say"><span class="col s6">Dire</span><div class="more col s6"><input type="text" placeholder="ex: Je suis EPIC"></div></li>
+      <li class="thenItem collection-item row" data-type="music">
+        <span class="col s6">Lancer musique</span>
+        <div class="more col s6">  
+          <a class='dropdown-button btn' href='#' data-activates='dropdownSong'>Choisir!</a>
+          <ul id='dropdownSong' class='dropdown-content'></ul>
+        </div>
+      </li>
+      <li class="thenItem andItem collection-item row" data-type="light">
+        <span class="col s6">Lumiere</span>
+        <div class="more col s6">
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+        </div>
+      </li>
+ 
+
+    </ul>
+  </div>
+
+  <div id="when" class="col s3 fullHeight">
+    <ul id="whenList" class="connectedSortable collection with-header">
+      <li class="collection-header disable"><h4>Quand ...</h4></li>
+    </ul>
+  </div>
+
+  <div id="and" class="col s3 fullHeight">
+    <ul id="andList" class="connectedSortable collection with-header">
+      <li class="collection-header disable"><h4>Et ...</h4></li>
+    </ul>
+  </div>
+
+  <div id="then" class="col s3 fullHeight">
+    <ul id="thenList" class="connectedSortable collection with-header">
+      <li class="collection-header disable"><h4>Alors !</h4></li>
+    </ul>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="pages/senari/js/senari.js"></script>

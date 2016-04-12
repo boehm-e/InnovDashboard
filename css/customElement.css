@@ -1,0 +1,53 @@
+x-product {
+  display: inline-block;
+  float: left;
+  background: transparent;
+  font-family: Helvetica, arial, sans-serif;
+  padding: 0 !important;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+x-product::shadow .product-name {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #08C;
+  border-top: 1px solid #EEE;
+  font-weight: bold;
+  padding: 0.75em 0;
+}
+
+x-product::shadow .knob {
+  width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    border-radius: 25px;
+    background: #F1F1F1;
+    position: relative;
+    top: -5px;
+    transition: 0.4s;
+}
+
+x-product::shadow .switch {
+    width: 60px;
+    height: 22px;
+    background: #B0AFAF;
+    border-radius: 35px;
+    float: right;
+}
+
+x-product::shadow .bigContainer {
+    padding: 0px;
+    background: white;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    width: calc(100% - 10px);
+    margin-left: 5px;
+}
+
+x-product::shadow .row {
+      padding: 30px;
+}

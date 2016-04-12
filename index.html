@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="font/font" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+      <link type="text/css" rel="stylesheet" href="css/customElement.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>EPIC</title>
+    </head>
+
+    <body>
+
+    <!-- FLOATING SPEECH RECOGNITION BUTTON -->
+    <a id="launchSpeechRecognition" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">mic</i></a>
+    <!-- Header -->
+    <div id="result"></div>
+    <nav id="header" class="row">
+          <div class="nav-wrapper col s1">
+            <i id="openMenu" data-open="true" class="material-icons">menu</i>
+          </div>
+          <div id="menuPath" class="col s10">
+            <a href="#!" class="breadcrumb">Accueil</a>
+          </div>
+    </nav>  
+    
+
+    <!-- Navigation Drawer -->
+    <div id="navDrawer">
+      <div id="headerDrawer">
+        <img id="avatarPicture" src="pictures/picture.jpg" class="demo-avatar">
+        <p id="avatarEmail">epic@gmail.com </p>
+      </div>
+        <span class="containerMenuItem" id="home">
+            <a class="menuItem">
+              <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>
+              <span>Accueil</span>
+            </a>
+        </span>
+        <span class="containerMenuItem" id="music">
+            <a class="menuItem">
+              <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">library_music</i>
+              <span>Musique</span>
+            </a>
+        </span>
+        <span class="containerMenuItem" id="senaris">
+            <a class="menuItem">
+              <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">av_timer</i>
+              <span>Senaris</span>
+            </a>
+        </span>
+        <span class="containerMenuItem" id="settings">
+            <a class="menuItem">
+              <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>
+              <span>Parametres</span>
+            </a>
+        </span>
+    </div>
+
+
+    <!-- MAIN CONTENT -->        
+    <div id="mainContent">  
+      <!-- HERE WE LOAD OUR CONTENT -->
+    </div>
+  
+
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/customElement.js"></script>
+      <script type="text/javascript" src="js/speechRecognition.js"></script>
+      <script type="text/javascript" src="js/menu.js"></script>
+    </body>
+  </html>

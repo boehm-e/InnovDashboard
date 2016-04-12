@@ -1,0 +1,66 @@
+#mainContent #settings {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 255px;
+  margin: 20px;
+}
+#mainContent ul{
+  overflow: visible;
+}
+
+#mainContent ul li {
+  line-height: 3rem;
+}
+
+#mainContent .fullHeight {
+  height: 95%;
+}
+
+#mainContent .white {
+    background: white;
+}
+
+#mainContent {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#mainContent #systemList, 
+#mainContent #whenList,
+#mainContent #andList,
+#mainContent #thenList {
+  height: 100%;
+  background: white;
+}
+ .ui-state-highlight { 
+   height: 11px;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  background: #F5F5F5; 
+}
+#systemList > li:hover:not(.disable),
+#andList > li:hover:not(.disable),
+#whenList > li:hover:not(.disable),
+#thenList > li:hover:not(.disable) {
+  cursor: -webkit-grab;
+}
+
+/*MORE*/
+#system .more {
+  display: none;
+}
+
+#when .more {
+  display: block;
+}
+
+#dropdownSong {
+  max-height: 300px;
+  overflow-y: scroll !important;
+}
