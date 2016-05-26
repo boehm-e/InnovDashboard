@@ -2,12 +2,13 @@
 <div class="row fullHeight">
 
 <div id="settings" class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large red">
+    <a class="btn-floating btn-large grey">
       <i class="large material-icons">settings</i>
     </a>
     <ul>
       <li><a id="reload" class="btn-floating blue"><i class="material-icons">replay</i></a></li>
       <li><a id="done" class="btn-floating green"><i class="material-icons">done</i></a></li>
+      <li><a id="showMine" href="#modal1" class="btn-floating purple modal-trigger"><i class="material-icons">clear_all</i></a></li>
     </ul>
   </div>
 
@@ -41,7 +42,7 @@
       <li class="collection-header disable"><h5>Alors ...</h5></li>
 
       <li class="thenItem collection-item row" data-type="say"><span class="col s6">Dire</span><div class="more col s6"><input type="text" placeholder="ex: Je suis EPIC"></div></li>
-      <li class="thenItem collection-item row" data-type="music">
+      <li class="thenItem collection-item row" data-type="song">
         <span class="col s6">Lancer musique</span>
         <div class="more col s6">  
           <a class='dropdown-button btn' href='#' data-activates='dropdownSong'>Choisir!</a>
@@ -83,5 +84,20 @@
   </div>
 
 </div>
+
+
+<!-- MODAL ALREADY CREATED SCENARI -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content collection with-header">
+      <ul id="listScenari">
+        <li class="collection-header"><h4>First Names</h4></li>
+      </ul>
+      <div class="row" id="scenariList"></div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
 
 <script type="text/javascript" src="pages/senari/js/senari.js"></script>

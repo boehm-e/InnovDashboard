@@ -31,3 +31,4 @@ home.onclick = function() {console.log("HOME");$("#mainContent").load("pages/hom
 music.onclick = function() {$("#mainContent").load("pages/music/music.html");}
 settings.onclick = function() {$("#mainContent").load("pages/settings/settings.html");}
 senaris.onclick = function() {$("#mainContent").load("pages/senari/senari.html");}
+tvShow.onclick = function() {$("#mainContent").load("pages/tvShow/tvShow.html");}

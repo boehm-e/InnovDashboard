@@ -26,8 +26,8 @@
           var songName = this.parentNode.getElementsByTagName('span')[0].innerText;
           var artist = this.parentNode.parentNode.parentNode;
           var result = artist.getElementsByClassName("collection-header")[0].getElementsByTagName('h4')[0];
-          var abc = result.innerText;
-          Socket.send("ecouter " + songName.replace('play arrow', '').replace('.mp3','').split('_').join(' ') + " " + abc);
+          var author = result.innerText.split('_').join(' ');
+          Socket.send("ecouter " + songName.replace('play arrow', '').replace('.mp3','').split('_').join(' ') + " " + author);
       })
     })
   }

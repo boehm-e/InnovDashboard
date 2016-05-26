@@ -1,9 +1,11 @@
 #mainContent #settings {
-  position: absolute;
-  bottom: 0;
   left: 0;
-  width: 255px;
-  margin: 20px;
+  width: 315px;
+  margin: 0px;
+
+      bottom: 0;
+    margin: 20px;
+    position: fixed;
 }
 #mainContent ul{
   overflow: visible;
@@ -29,6 +31,7 @@
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 #mainContent #systemList, 
@@ -63,4 +66,20 @@
 #dropdownSong {
   max-height: 300px;
   overflow-y: scroll !important;
+}
+
+#modal1 .row {
+  margin-bottom: 0;
+}
+
+#modal1 .material-icons {
+  line-height: 50px;
+  position: absolute;
+  margin-left: -30px;
+}
+
+.actionParam {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
 }
